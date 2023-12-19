@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h3>BOOKS</h3>
+<ul></ul>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+        $.ajax({
+            url: 'http://127.0.0.1:5000/books',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                var html = '';
+                for (var i = 0; i < data.length; i++) {
+                    html += '<li>' + data[i] + '</li>';
+                }
+                $('ul').html(html);
+            }
+        });
+</script>
+</body>
+</html>
