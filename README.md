@@ -9,6 +9,5 @@ Here you can view my code comments (basically written) and run my code to learn;
 <br>
 <br>
 
-<p>
-  # Learning sequence:
-</p>
+- ### Learning sequence:
+  
